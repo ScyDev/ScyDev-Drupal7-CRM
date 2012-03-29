@@ -1,5 +1,8 @@
 
 <style>
+* {
+	font-size: 16px;
+}
 
 #logo img {
 	position: relative;
@@ -35,10 +38,11 @@
 #footer table tr {
 	background-color: transparent !important;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 14px;
+	font-size: 16px;
 }
 
-#sender-address tr {
+#sender-address tr td, 
+#sender-address tr td a {
 	font-size: 12px !important;
 }
 
@@ -65,11 +69,11 @@
 	top: -130px;
 }
 
-.pane-node-title {
+.pane-node-title .pane-content {
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 22px !important;
 }
-.pane-node-title:before {
+.pane-node-title .pane-content:before {
 	content: "Rechnung: ";
 }
 
@@ -77,11 +81,14 @@
 	display: none;
 }
 
-.view-time-for-task {
-	font-size: 10px !important;
+.view-time-for-task tr td, 
+.view-time-for-task tr td span,
+.view-time-for-task tr td a {
+	font-size: 12px !important;
 }
 
 .view-time-for-task table th {
+	font-size: 12px !important;
 	background-color: #757575;
 	color: #000000;
 }
@@ -91,10 +98,25 @@
 	padding-bottom: 0;
 }
 
-.views-table .views-field-field-task, 
+
 .views-table .views-field-field-start-time-1, 
 .views-table .views-field-field-end-time {
 	white-space: nowrap;
+}
+
+.views-table .views-field-field-task {
+	min-width: 200px;
+}
+
+.views-table .views-field-php-2 {
+	min-width: 50px;
+}
+
+.views-table tr td {
+	border-top: solid black 1px;
+	border-width: 1px 0 0 0;
+	border-color: #ccc white white white;
+	border-style: solid none none none;
 }
 
 .view-time-for-task table td.odd {
